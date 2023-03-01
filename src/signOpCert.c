@@ -1,3 +1,5 @@
+#ifndef APP_XS
+
 #include "common.h"
 
 #include "signOpCert.h"
@@ -203,3 +205,5 @@ static void signOpCert_ui_runStep()
 	}
 	UI_STEP_END(UI_STEP_INVALID);
 }
+
+#endif // APP_XS
