@@ -15,7 +15,15 @@
 #  limitations under the License.
 #*******************************************************************************
 
+# relevant only for Nano S
+# APP_XS = 1
+
+ifeq ($(APP_XS),)
 APPNAME      = "Cardano ADA"
+else
+APPNAME      = "Cardano ADA XS"
+endif
+
 APPVERSION_M = 6
 APPVERSION_N = 0
 APPVERSION_P = 3
