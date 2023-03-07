@@ -185,9 +185,9 @@ security_policy_t policyForSignTxReferenceInput(const sign_tx_signingmode_t txSi
 
 security_policy_t policyForSignTxConfirm();
 
-#ifndef APP_XS
+#ifndef APP_XS_OPCERT
 security_policy_t policyForSignOpCert(const bip44_path_t* poolColdKeyPathSpec);
-#endif // APP_XS
+#endif // APP_XS_OPCERT
 
 security_policy_t policyForCVoteRegistrationVoteKey();
 security_policy_t policyForCVoteRegistrationVoteKeyPath(

@@ -1,4 +1,4 @@
-#ifndef APP_XS
+#ifndef APP_XS_OPCERT
 
 #include "common.h"
 
@@ -206,4 +206,4 @@ static void signOpCert_ui_runStep()
 	UI_STEP_END(UI_STEP_INVALID);
 }
 
-#endif // APP_XS
+#endif // APP_XS_OPCERT

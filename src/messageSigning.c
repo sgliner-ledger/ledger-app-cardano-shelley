@@ -88,7 +88,7 @@ void getCVoteRegistrationSignature(bip44_path_t* pathSpec,
 	#endif
 }
 
-#ifndef APP_XS
+#ifndef APP_XS_OPCERT
 void getOpCertSignature(bip44_path_t* pathSpec,
                         const uint8_t* opCertBodyBuffer, size_t opCertBodySize,
                         uint8_t* outBuffer, size_t outSize)
@@ -99,4 +99,4 @@ void getOpCertSignature(bip44_path_t* pathSpec,
 
 	signRawMessageWithPath(pathSpec, opCertBodyBuffer, opCertBodySize, outBuffer, outSize);
 }
-#endif // APP_XS
+#endif // APP_XS_OPCERT

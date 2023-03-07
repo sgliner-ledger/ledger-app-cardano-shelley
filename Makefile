@@ -16,12 +16,12 @@
 #*******************************************************************************
 
 # relevant only for Nano S
-# APP_XS = 1
+APP_XS = 1
 
-ifeq ($(APP_XS),)
-APPNAME      = "Cardano ADA"
-else
+ifdef APP_XS
 APPNAME      = "Cardano ADA XS"
+else
+APPNAME      = "Cardano ADA"
 endif
 
 APPVERSION_M = 6
@@ -39,6 +39,11 @@ ifeq ($(TARGET_NAME),TARGET_NANOS)
 	ICONNAME=icon_ada_nanos.gif
 else
 	ICONNAME=icon_ada_nanox.gif
+endif
+
+ifdef APP_XS
+# list of features to be removed from the XS app
+DEFINES += APP_XS_OPCERT
 endif
 
 ##############

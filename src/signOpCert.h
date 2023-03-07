@@ -1,7 +1,7 @@
 #ifndef H_CARDANO_APP_SIGN_OP_CERT
 #define H_CARDANO_APP_SIGN_OP_CERT
 
-#ifndef APP_XS
+#ifndef APP_XS_OPCERT
 
 #include "common.h"
 #include "handlers.h"
@@ -22,6 +22,6 @@ typedef struct {
 	int ui_step;
 } ins_sign_op_cert_context_t;
 
-#endif // APP_XS
+#endif // APP_XS_OPCERT
 
 #endif // H_CARDANO_APP_SIGN_OP_CERT
